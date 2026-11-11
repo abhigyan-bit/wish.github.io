@@ -1,9 +1,9 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Star, Sparkles } from "lucide-react";
-import Fairy from "./Fairy";
+import Fairy from "./fairy";
 import FloatingRoses from "./FloatingRoses";
-import CuteAnimals from "./CuteAnimals";
+import CuteAnimals from "./cuteanimal";
 
 interface MemorySlidesProps {
   currentSlide: number;
