@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Heart, Sparkles, Laugh } from "lucide-react";
-import Fairy from "./Fairy";
+import Fairy from "./fairy";
 import FloatingRoses from "./FloatingRoses";
 import Fireworks from "./Fireworks";
 
