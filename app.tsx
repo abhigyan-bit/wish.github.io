@@ -1,5 +1,7 @@
 import { useState } from "react";
+import { createRoot } from "react-dom/client";
 import { AnimatePresence } from "framer-motion";
+import "./index.css";
 import IntroSlide from "./IntroSlide";
 import Slide2 from "./Slide2";
 import Slide3 from "./Slide3";
@@ -8,7 +10,7 @@ import Slide5 from "./Slide5";
 import MemorySlides from "./MemorySlide";
 import FinalSlide from "./FinalSlide";
 
-export default function App() {
+function App() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const totalSlides = 7;
 
@@ -42,3 +44,10 @@ export default function App() {
     </div>
   );
 }
+
+const rootElement = document.getElementById("root");
+if (!rootElement) {
+  throw new Error('Root element "#root" was not found in index.html');
+}
+
+createRoot(rootElement).render(<App />);
